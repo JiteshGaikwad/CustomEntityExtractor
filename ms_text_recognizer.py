@@ -1,6 +1,6 @@
 from html import entities
 from typing import Dict, Text, Any, List
-
+from rasa.shared.nlu.constants import ENTITIES, TEXT
 from rasa.engine.graph import GraphComponent, ExecutionContext
 from rasa.engine.recipes.default_recipe import DefaultV1Recipe
 from rasa.engine.storage.resource import Resource
@@ -122,5 +122,8 @@ class MSTextRecognizer(GraphComponent):
 
                 entity = self.convert_to_rasa(entity_value, entity_type)
                 entities.append(entity)
-            message.set("entities", entities, add_to_output=True)
+
+            message.set(
+                ENTITIES, message.get(ENTITIES, []) + entities, add_to_output=True
+            )
         return messages
