@@ -14,11 +14,13 @@ _note: Make sure you have installed the Rasa version >3.x_
 
 - add `ms_text_recognizer.py` in your project directory as show below
 
-![alt projecr_dir](dir.png)
+<img src="dir.png" width=200 height=300 />
+
 
 - next add the extractor name in your `config.yml` file as show below
 
-![alt projecr_dir](config_yml.png)
+<img src="config_yml.png" width=300 height=400 />
+
 
 - now you can train your Rasa model so that it predicts the entity
 
