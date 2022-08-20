@@ -1,4 +1,4 @@
-# CustomEntityExtractor
+# Custom Entity Extractor
 Entity extractor based on [Microsoft Text Recognzier](https://github.com/microsoft/Recognizers-Text) as an alternative to Duckling Extractor 
 
 You can find the list of entity types that the extractor supports [here](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures)
